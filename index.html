@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Growth App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="Images/earth-tab.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/apg.png" style="height: 55px;" alt="logo" />
+          </a>
+        </div>
+
+        <div class="main-menu">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="#faq-sec">WASTEWISE</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Hamburger Button -->
+        <button class="hamburger-button">
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+        </button>
+        <div class="mobile-menu">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="#faq-sec">WASTEWISE</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-heading text-xxl">
+            Empowering Bandung: Predicting Waste Volume, Preventing Overflow
+          </h1>
+          <p class="hero-text">
+            Our application provides real-time data and predictive insights for waste management in Bandung. With an intuitive dashboard, users can ask questions, view current waste statistics, and explore future waste predictions.
+          </p>
+          <div class="hero-buttons">
+            <a href="#" class="btn btn-primary">Get Started</a>
+            <a href="#" class="btn btn-secondary"> <i class="fa-solid fa-chart-simple"></i> Waste Dashboard</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dashboard -->
+    <section class="chat-input-section dashboard bg-black">
+
+      <div class="container">
+        <h3 class="dashboard text-xl" style="margin: auto; text-align: center; margin-bottom: 20px;">
+          Data-driven insights about Bandung Waste Management
+        </h3>
+        <div class="dashboard-grid">
+          <!-- First Card for Graph -->
+          <div class="card">
+            <!-- Placeholder or container for graph -->
+             <h3>Jumlah TPS</h3>
+             <h1 class="maindata tps">27</h1>
+            <div id="graph1" class="graph-container">
+              <!-- Graph from API will be inserted here -->
+            </div>
+          </div>
+
+          <!-- Second Card for Graph -->
+          <div class="card">
+            <h3>Jumlah TPA</h3>
+            <h1 class="maindata tpa">0</h1>
+            <div id="graph2" class="graph-container">
+              <!-- Graph from API will be inserted here -->
+            </div>
+          </div>
+
+          <!-- Third Card for Graph -->
+          <div class="card">
+            <h3>Jumlah Penanganan Sampah</h3>
+            <h1 class="maindata sampah">183.854 Ton</h1>
+            <div id="graph3" class="graph-container">
+              <!-- Graph from API will be inserted here -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Chatbot -->
+      <div class="container-sm">
+        <h2 class="chat-heading text-xl text-center">Ask WasteWise Now!</h2>
+        <div class="chat-content">
+          <div class="chat-input-container">
+            <input type="text" class="chat-input-box" placeholder="Enter a prompt here">
+            <div class="chat-input-icons" id="send-button">
+              <i class="fas fa-paper-plane"></i> <!-- Submit icon -->
+            </div>
+          </div>
+          <div class="chat-response-container">
+            <div class="response-box">
+              <p class="response-message"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq bg-light" id="faq-sec">
+      <div class="container-sm">
+        <h3 class="text-xl text-center">Our Chatbot General Guide</h3>
+        
+        <div class="faq-content">
+          <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">
+                Users can only ask questions related to waste management in Bandung.
+              </h4>
+            
+            </div>
+          </div>
+
+          <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">
+                To get the most accurate response, ask your questions in simple, straightforward language.
+              </h4>
+              
+            </div>
+          </div>
+
+          <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">
+                For more detailed answers, be specific in your queries. For example, ask about waste data for a particular district or time period.
+              </h4>
+              
+            </div>
+          </div>
+
+          <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">
+                Ask one question at a time to ensure the chatbot can process and respond accurately to your query.
+              </h4>
+              
+            </div>
+          </div>
+
+          <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">
+                For comprehensive waste statistics and predictions, refer to the dashboard rather than asking for generalized data through the chatbot.
+              </h4>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+    <footer>
+      <div>
+        <p>Made for Alibaba Cloud Indonesia Generative AI Hackathon 2024</p>
+        <p><b>Team Apulgon</b> &copy; 2024</p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script type="module" src="main.js"></script>
+  </body>
+  </html>
